@@ -1,0 +1,24 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin image-fit {
+  display: block;
+  max-width: 100%;
+}
+
+@mixin pseudo-box ($content: "", $pos: absolute, $display: block) {
+  content: $content;
+  position: $pos;
+  display: $display;
+}
