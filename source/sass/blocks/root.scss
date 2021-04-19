@@ -1,5 +1,12 @@
 /* root */
 
 .root {
-  font-family: 'Open Sans', 'Arial' , sans-serif;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.root__header {
+  margin: 0 auto;
 }

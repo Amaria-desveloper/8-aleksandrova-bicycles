@@ -1,0 +1,121 @@
+/* Menu */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 880px;
+  max-width: calc(100% - (280px * 2));
+  padding: 21px 22px 9px;
+  list-style: none;
+  border-bottom: 1px solid $basic-white-20;
+
+  &--nojs {
+    display: flex;
+  }
+
+  &--open {
+    display: flex;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 135px;
+}
+
+.menu__link {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: -0.005em;
+  font-weight: 300;
+  color: $basic-white-70;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+  }
+}
+
+
+@media screen and (max-width: $tablet-max) {
+  .menu {
+    display: none;
+    flex-flow: column nowrap;
+    min-width: auto;
+    max-width: 100%;
+    padding: 100px 0 138px;
+    background-color: $basic-white;
+
+    &--nojs {
+      display: flex;
+    }
+
+    &--open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100vh;
+      background-color: $basic-white;
+      z-index: 1;
+    }
+  }
+
+  .menu__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    background-color: $neutral-grey;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $black-grey;
+
+    &::after {
+      @include pseudo-box();
+      top: 0;
+      right: 0;
+      transform: translateY(25%);
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/arrow-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: translate(-50%, 25%);
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-blue;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+@media screen and (max-width: $tablet-min) {
+  .menu__link {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
