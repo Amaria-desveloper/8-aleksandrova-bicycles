@@ -25,6 +25,7 @@ function toggleClickHandler(evt) {
   headerToggle.classList.toggle(`header__toggle--open`);
 }
 
-
-setInitialMenu();
-headerToggle.addEventListener(`click`, toggleClickHandler);
+if (headerMenu && headerToggle) {
+  setInitialMenu();
+  headerToggle.addEventListener(`click`, toggleClickHandler);
+}

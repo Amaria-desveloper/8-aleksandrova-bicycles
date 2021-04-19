@@ -3,13 +3,10 @@
    ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
   line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 1 */ }
 
 /* Sections
    ========================================================================== */
@@ -53,7 +50,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -75,9 +72,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */ }
+  /*text-decoration: underline dotted; /* 2 */ }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -93,7 +88,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -170,12 +165,12 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
+/*button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
-
+  -webkit-appearance: button;
+}*/
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -258,8 +253,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
+  /*-webkit-appearance: textfield; /* 1 */
   outline-offset: -2px;
   /* 2 */ }
 
@@ -267,14 +261,16 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+          appearance: none; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
+  /*-webkit*/
+  -appearance: button;
   /* 1 */
   font: inherit;
   /* 2 */ }
@@ -355,7 +351,7 @@ html {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
-  font-family: 'Open Sans', 'Arial' , sans-serif; }
+  font-family: "Open Sans", "Arial", sans-serif; }
 
 .root__header {
   margin: 0 auto; }
@@ -365,13 +361,13 @@ html {
   position: relative;
   min-height: 825px;
   background-color: #1a1a1a;
-  background-image: url("../../img/lead__image.jpg");
+  background-image: url("../img/lead__image.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .header {
-      background-image: url("../../img/lead__image@2x.jpg"); } }
+      background-image: url("../img/lead__image@2x.jpg"); } }
 
 .header__nav {
   display: block; }
@@ -402,7 +398,7 @@ html {
     padding: 0;
     background-color: #0ad9c6;
     border: none;
-    background-image: url("../../img/burger.svg");
+    background-image: url("../img/burger.svg");
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center center;
@@ -414,7 +410,7 @@ html {
       top: 0;
       height: 52px;
       background-color: transparent;
-      background-image: url("../../img/burger-cross.svg");
+      background-image: url("../img/burger-cross.svg");
       background-size: 22px 23px; } }
 
 /* Menu */
@@ -425,7 +421,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-width: 880px;
-  max-width: calc(100% - (280px *2));
+  max-width: calc(100% - (280px * 2));
   padding: 21px 22px 9px;
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
@@ -512,7 +508,7 @@ html {
               transform: translateY(25%);
       width: 25px;
       height: 25px;
-      background-image: url(../img/arrow-right.svg);
+      background-image: url("../img/arrow-right.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center; }
@@ -663,7 +659,7 @@ html {
   border: 1px solid #0ad9c6;
   border-radius: 6px; }
   .lead-form__button:hover {
-    background-color: #0FBFAF; }
+    background-color: #0fbfaf; }
 
 @media screen and (max-width: 1023px) {
   .lead-form {
