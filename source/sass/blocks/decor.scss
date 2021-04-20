@@ -1,0 +1,99 @@
+/* Decor */
+
+.decor {
+  position: relative;
+  z-index: 0;
+}
+
+.decor--circle {
+  &::after {
+    @include pseudo-box;
+    top: 0;
+    right: 0;
+    transform: translate(36px, -32px);
+    width: 95px;
+    height: 95px;
+    border: 17px solid $accent-blue;
+    border-radius: 50%;
+  }
+}
+
+.decor--circle-big {
+  &::after {
+    @include pseudo-box;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translate(-60px, -50%);
+    width: 180px;
+    height: 180px;
+    border: 27px solid $accent-blue;
+    border-radius: 50%;
+  }
+}
+
+
+.decor--squares {
+  &::before,
+  &::after {
+    @include pseudo-box;
+    width: 47px;
+    height: 47px;
+    border: 8px solid $accent-blue;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    transform: translate(-18px, -19px);
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+    transform: translate(23px, 23px);
+  }
+}
+
+
+@media screen and (max-width: $tablet-max) {
+  .decor--squares {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .decor--circle {
+    &::after {
+      width: 68px;
+      height: 68px;
+      transform: translate(25px, -20px);
+    }
+  }
+
+  .decor--circle-big {
+    &::after {
+      top: 100%;
+      width: 127px;
+      height: 127px;
+      transform: translate(-37px, calc(-100% + 28px));
+      border-width: 18px;
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile-max) {
+  .decor--circle {
+    &::after {
+      transform: translate(15px, -20px);
+    }
+  }
+
+  .decor--circle-big {
+    &::after {
+      transform: translate(-24px, calc(-100% + 28px));
+    }
+  }
+}

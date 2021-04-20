@@ -12,11 +12,6 @@
   overflow: hidden;
 }
 
-@mixin image-fit {
-  display: block;
-  max-width: 100%;
-}
-
 @mixin pseudo-box ($content: "", $pos: absolute, $display: block) {
   content: $content;
   position: $pos;
