@@ -1,7 +1,7 @@
 /* Types */
 
 .types {
-  padding: 149px 0;
+  padding: 127px 0;
   background-color: $white-grey;
 }
 
@@ -37,9 +37,7 @@
 }
 
 .types__list-item img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
+  @include image-fit;
   border-radius: 10px;
 }
 
@@ -55,11 +53,15 @@
 
 @media screen and (max-width: $tablet-max) {
   .types {
-    padding: 50px 0 70px;
+    padding: 26px 0 50px;
   }
 
   .types h2 {
     margin-bottom: 30px;
+  }
+
+  .types__list {
+    gap: 30px 50px;
   }
 
   .types__list-item {
@@ -78,6 +80,10 @@
 
 
 @media screen and (max-width: $mobile-max) {
+  .types {
+    padding: 30px 0 36px;
+  }
+
   .types__list {
     gap: 20px;
   }

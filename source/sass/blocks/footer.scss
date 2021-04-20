@@ -3,7 +3,7 @@
 .footer {
   max-width: calc(100% - (240px * 2));
   margin: 0 auto;
-  padding-bottom: 98px;
+  padding: 151px 0 98px;
 }
 
 .footer__text {
@@ -86,7 +86,7 @@
 @media screen and (max-width: $tablet-max) {
   .footer {
     max-width: calc(100% - (35px * 2));
-    padding-bottom: 52px;
+    padding: 62px 0 52px;
   }
 
   .footer__text {
@@ -94,7 +94,7 @@
   }
 
   .footer__text > h2 {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   .footer__text p {
@@ -118,15 +118,15 @@
 @media screen and (max-width: $mobile-max) {
   .footer {
     max-width: 100%;
-    padding-bottom: 50px;
+    padding: 75px 0 50px;
   }
 
   .footer__text {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   .footer__text > h2 {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .footer__text p {
@@ -139,7 +139,7 @@
   }
 
   .footer__contacts {
-    margin-top: 25px;
+    margin-top: 28px;
   }
 
   .footer__contacts-list {
