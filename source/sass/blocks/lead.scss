@@ -33,7 +33,7 @@
     row-gap: 70px;
     max-width: 100%;
     min-height: 0;
-    padding: 0 0 70px;
+    padding: 0;
     background-color: $basic-white;
   }
 
@@ -67,7 +67,11 @@
   }
 
   .lead__column {
-    padding: 25px 16px 70px;
+    padding: 25px 16px 0;
+
+    &--text {
+      padding-bottom: 70px;
+    }
   }
 
   .lead__logo {

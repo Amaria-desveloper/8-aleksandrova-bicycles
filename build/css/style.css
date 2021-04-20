@@ -563,7 +563,7 @@ html {
     row-gap: 70px;
     max-width: 100%;
     min-height: 0;
-    padding: 0 0 70px;
+    padding: 0;
     background-color: #ffffff; }
   .lead__column {
     width: 100%; }
@@ -584,7 +584,9 @@ html {
   .lead {
     row-gap: 48px; }
   .lead__column {
-    padding: 25px 16px 70px; }
+    padding: 25px 16px 0; }
+    .lead__column--text {
+      padding-bottom: 70px; }
   .lead__logo {
     margin-bottom: 70px; } }
 
@@ -719,4 +721,88 @@ html {
     line-height: 1.78; } }
 
 /* header */
+/* Facts */
+.facts {
+  padding: 150px 40px;
+  background-color: #ffffff; }
+
+.facts h2 {
+  margin: 0 0 50px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  color: #1f1f1f; }
+
+.facts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 38px;
+     -moz-column-gap: 38px;
+          column-gap: 38px;
+  row-gap: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
+  counter-reset: factsList; }
+
+.facts__list-item {
+  max-width: 263px; }
+  .facts__list-item::before {
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    counter-increment: factsList;
+    content: "0" counter(factsList);
+    font-size: 28px;
+    line-height: 1.36;
+    letter-spacing: -1.27px;
+    color: #0ad9c6; }
+
+.facts__list p {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: #000000; }
+  .facts__list p + p {
+    margin-top: 12px; }
+
+@media screen and (max-width: 1439px) {
+  .facts {
+    padding: 75px 20px; }
+  .facts__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 28px; } }
+
+@media screen and (max-width: 1023px) {
+  .facts h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.71; }
+  .facts__list {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 38px; }
+  .facts__list-item::before {
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 767px) {
+  .facts {
+    padding: 70px 0; }
+  .facts__list p {
+    font-size: 18px;
+    line-height: 1.89;
+    letter-spacing: -0.5px; } }
+
 /* footer */
