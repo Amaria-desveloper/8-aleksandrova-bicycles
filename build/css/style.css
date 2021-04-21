@@ -966,8 +966,8 @@ html {
     -webkit-transform: translate(15px, -20px);
             transform: translate(15px, -20px); }
   .decor--circle-big::after {
-    -webkit-transform: translate(-24px, 28px);
-            transform: translate(-24px, 28px); } }
+    -webkit-transform: translate(-24px, -100px);
+            transform: translate(-24px, -100px); } }
 
 /* Video */
 .video {
