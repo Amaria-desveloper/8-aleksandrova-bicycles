@@ -3,6 +3,7 @@
 const headerMenu = document.querySelector(`.header__menu`);
 const headerToggle = document.querySelector(`.header__toggle`);
 
+
 /**
  * Инициализирует внешний вид меню при работающем сценарии
  * @returns void
