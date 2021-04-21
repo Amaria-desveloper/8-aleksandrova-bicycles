@@ -54,6 +54,7 @@
   justify-content: center;
   width: 100%;
   min-height: 51px;
+  padding: 0;
   font-size: 15px;
   line-height: 1.4;
   font-weight: 600;
@@ -61,6 +62,7 @@
   background-color: $accent-blue;
   border: 1px solid $accent-blue;
   border-radius: 6px;
+  cursor: pointer;
 
   &:hover {
     background-color: $accent-dark-blue;
