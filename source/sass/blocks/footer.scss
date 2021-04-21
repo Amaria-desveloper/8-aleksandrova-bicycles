@@ -24,6 +24,11 @@
   color: $basic-black-70;
 }
 
+.footer__map {
+  max-height: 545px;
+  background-color: $special-beige;
+}
+
 .footer__map iframe {
   max-width: 100%;
   height: 530px;

@@ -39,6 +39,7 @@
 .types__list-item img {
   @include image-fit;
   border-radius: 10px;
+  background-color: $special-beige;
 }
 
 .types__list-item h3 {

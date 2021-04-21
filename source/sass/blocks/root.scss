@@ -3,10 +3,30 @@
 .root {
   max-width: 1440px;
   min-width: 320px;
+  min-height: 100vh;
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  display: grid;
+  align-items: start;
+  justify-content: stretch;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
+
 .root__header {
-  margin: 0 auto;
+  grid-area: header;
 }
+
+.root__main {
+  grid-area: main;
+}
+
+.root__footer {
+  grid-area: footer;
+}
+
