@@ -7,7 +7,7 @@
 
   /**
    * Инициализирует внешний вид меню при работающем сценарии
-   * @returns void
+   * @return {void}
    */
   function setInitialMenu() {
     headerToggle.classList.remove(`header__toggle--nojs`);
@@ -18,7 +18,7 @@
   /**
    * Ловит событие click на меню-гамбургере
    * @param {event} evt
-   * @returns void
+   * @return {void}
    */
   function toggleClickHandler(evt) {
     evt.preventDefault();
@@ -29,7 +29,7 @@
 
     if (menuLinks) {
       for (let link of menuLinks) {
-        link.addEventListener(`click`, function() {
+        link.addEventListener(`click`, function () {
           headerMenu.classList.remove(`menu--open`);
           headerToggle.classList.remove(`header__toggle--open`);
         });
