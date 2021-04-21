@@ -3,7 +3,6 @@
 const headerMenu = document.querySelector(`.header__menu`);
 const headerToggle = document.querySelector(`.header__toggle`);
 
-
 /**
  * Инициализирует внешний вид меню при работающем сценарии
  * @returns void
@@ -23,6 +22,14 @@ function toggleClickHandler(evt) {
   evt.preventDefault();
   headerMenu.classList.toggle(`menu--open`);
   headerToggle.classList.toggle(`header__toggle--open`);
+
+  let menuLinks = headerMenu.querySelectorAll(`.menu__link`);
+  for (let link of menuLinks) {
+    link.addEventListener(`click`, function() {
+      headerMenu.classList.remove(`menu--open`);
+      headerToggle.classList.remove(`header__toggle--open`);
+    });
+  }
 }
 
 if (headerMenu && headerToggle) {
