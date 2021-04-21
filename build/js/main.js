@@ -1,8 +1,8 @@
 'use strict';
 
 (function () {
-  const headerMenu = document.querySelector(`.header__menu`);
-  const headerToggle = document.querySelector(`.header__toggle`);
+  const headerMenu = document.querySelector('.header__menu');
+  const headerToggle = document.querySelector('.header__toggle');
 
 
   /**
@@ -10,8 +10,8 @@
    * @return {void}
    */
   function setInitialMenu() {
-    headerToggle.classList.remove(`header__toggle--nojs`);
-    headerMenu.classList.remove(`menu--nojs`);
+    headerToggle.classList.remove('header__toggle--nojs');
+    headerMenu.classList.remove('menu--nojs');
   }
 
 
@@ -22,16 +22,16 @@
    */
   function toggleClickHandler(evt) {
     evt.preventDefault();
-    headerMenu.classList.toggle(`menu--open`);
-    headerToggle.classList.toggle(`header__toggle--open`);
+    headerMenu.classList.toggle('menu--open');
+    headerToggle.classList.toggle('header__toggle--open');
 
-    let menuLinks = headerMenu.querySelectorAll(`.menu__link`);
+    const menuLinks = headerMenu.querySelectorAll('.menu__link');
 
     if (menuLinks) {
-      for (let link of menuLinks) {
-        link.addEventListener(`click`, function () {
-          headerMenu.classList.remove(`menu--open`);
-          headerToggle.classList.remove(`header__toggle--open`);
+      for (const link of menuLinks) {
+        link.addEventListener('click', () => {
+          headerMenu.classList.remove('menu--open');
+          headerToggle.classList.remove('header__toggle--open');
         });
       }
     }
@@ -39,6 +39,6 @@
 
   if (headerMenu && headerToggle) {
     setInitialMenu();
-    headerToggle.addEventListener(`click`, toggleClickHandler);
+    headerToggle.addEventListener('click', toggleClickHandler);
   }
 })();
