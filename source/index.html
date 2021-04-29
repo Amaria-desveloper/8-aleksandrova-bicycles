@@ -68,10 +68,10 @@
                   <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
                 </legend>
                 <label>
-                  <input type="text" name="name" value="" placeholder="Введите Ваше Имя" pattern="^[А-яА-Я]+$" required>
+                  <input type="text" name="name" value="" placeholder="Введите Ваше Имя" pattern="[A-zA-ZА-яА-Я]+$" title="имя без пробелов" required>
                 </label>
                 <label>
-                  <input type="tel" name="phone-number" value="" placeholder="Введите Ваш номер телефона" pattern="^[0-9]+$" minlength="8" maxlength="18" required>
+                  <input type="tel" name="phone-number" value="" placeholder="Введите Ваш номер телефона" pattern="^(\+)?[0-9]+$" minlength="8" maxlength="18" title="телефон в формате: +79991234567" required>
                 </label>
               </fieldset>
               <button class="lead-form__button" type="submit">Подобрать велосипед мечты</button>
