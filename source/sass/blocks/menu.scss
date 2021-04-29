@@ -3,6 +3,7 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 135px;
   min-width: 880px;
   max-width: calc(100% - (280px * 2));
   padding: 21px 22px 9px;
@@ -16,10 +17,6 @@
   &--open {
     display: flex;
   }
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 135px;
 }
 
 .menu__link {

@@ -438,6 +438,9 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-column-gap: 135px;
+     -moz-column-gap: 135px;
+          column-gap: 135px;
   min-width: 880px;
   max-width: calc(100% - (280px * 2));
   padding: 21px 22px 9px;
@@ -451,9 +454,6 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-
-.menu__item:not(:last-child) {
-  margin-right: 135px; }
 
 .menu__link {
   font-size: 16px;
