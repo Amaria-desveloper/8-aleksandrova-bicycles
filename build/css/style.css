@@ -415,7 +415,7 @@ html {
     display: block;
     position: absolute;
     right: 0;
-    width: 50px;
+    width: 55px;
     height: 50px;
     padding: 0;
     background-color: #0ad9c6;
@@ -610,6 +610,8 @@ html {
     padding: 25px 16px 0; }
     .lead__column--text {
       padding-bottom: 70px; }
+    .lead__column--form {
+      min-width: auto; }
   .lead__logo {
     margin-bottom: 70px; } }
 
@@ -1043,6 +1045,8 @@ html {
 
 .video__play-button svg {
   margin: auto auto;
+  width: 13px;
+  height: 19px;
   -webkit-transform: translate(25%, 0);
           transform: translate(25%, 0); }
 
@@ -1066,26 +1070,33 @@ html {
   .video__play-button {
     width: 91px;
     height: 91px; }
+  .video__play-button svg {
+    width: 19px;
+    height: 26px; }
   .video__text {
     max-width: 429px;
     margin-bottom: 40px; } }
 
 @media screen and (max-width: 767px) {
   .video {
-    padding-top: 80px;
+    padding-top: 86px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#131314), color-stop(89%, #131314), color-stop(89%, #ffffff), to(#ffffff));
     background-image: linear-gradient(to bottom, #131314 0%, #131314 89%, #ffffff 89%, #ffffff 100%); }
   .video__text {
     margin-bottom: 50px;
     padding: 0 16px; }
-  .video h2 {
-    margin-bottom: 12px; }
+  .video__text h2 {
+    line-height: 1.25;
+    letter-spacing: -0.005em; }
   .video__player {
     max-width: 288px;
-    height: 162px; }
+    height: 166px; }
   .video__play-button {
     width: 65px;
-    height: 65px; } }
+    height: 65px; }
+  .video__play-button svg {
+    width: 13px;
+    height: 19px; } }
 
 /* footer */
 .footer {
@@ -1202,7 +1213,7 @@ html {
 @media screen and (max-width: 767px) {
   .footer {
     max-width: 100%;
-    padding: 75px 0 50px; }
+    padding: 70px 0 50px; }
   .footer__text {
     margin-bottom: 20px; }
   .footer__text > h2 {
@@ -1222,4 +1233,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 22px; } }
+    gap: 22px; }
+  .footer__contacts-list a svg {
+    margin-right: 8px; } }

@@ -125,7 +125,7 @@
 @media screen and (max-width: $mobile-max) {
   .footer {
     max-width: 100%;
-    padding: 75px 0 50px;
+    padding: 70px 0 50px;
   }
 
   .footer__text {
@@ -153,5 +153,9 @@
     flex-direction: column;
     align-items: center;
     gap: 22px;
+  }
+
+  .footer__contacts-list a svg {
+    margin-right: 8px;
   }
 }

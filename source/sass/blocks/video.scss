@@ -54,6 +54,8 @@
 
 .video__play-button svg {
   margin: auto auto;
+  width: 13px;
+  height: 19px;
   transform: translate(25%, 0);
 }
 
@@ -82,6 +84,11 @@
     height: 91px;
   }
 
+  .video__play-button svg {
+    width: 19px;
+    height: 26px;
+  }
+
   .video__text {
     max-width: 429px;
     margin-bottom: 40px;
@@ -91,7 +98,7 @@
 
 @media screen and (max-width: $mobile-max) {
   .video {
-    padding-top: 80px;
+    padding-top: 86px;
     background-image: linear-gradient(to bottom, $special-black 0%, $special-black 89%, $basic-white 89%, $basic-white 100%);
   }
 
@@ -100,17 +107,23 @@
     padding: 0 16px;
   }
 
-  .video h2 {
-    margin-bottom: 12px;
+  .video__text h2 {
+    line-height: 1.25;
+    letter-spacing: -0.005em;
   }
 
   .video__player {
     max-width: 288px;
-    height: 162px;
+    height: 166px;
   }
 
   .video__play-button {
     width: 65px;
     height: 65px;
+  }
+
+  .video__play-button svg {
+    width: 13px;
+    height: 19px;
   }
 }
