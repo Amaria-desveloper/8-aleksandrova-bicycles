@@ -349,7 +349,6 @@ html {
 
 /* root */
 .root {
-  max-width: 1440px;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
@@ -364,6 +363,9 @@ html {
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   grid-template-areas: "header" "main" "footer"; }
+  .root--overflow {
+    overflow: hidden;
+    height: 100vh; }
 
 .root__header {
   grid-area: header; }

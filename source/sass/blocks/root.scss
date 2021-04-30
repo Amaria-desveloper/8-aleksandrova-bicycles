@@ -15,8 +15,12 @@
     "header"
     "main"
     "footer";
-}
 
+  &--overflow {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
 
 .root__header {
   grid-area: header;
