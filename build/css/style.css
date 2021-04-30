@@ -1090,6 +1090,7 @@ html {
 /* footer */
 .footer {
   max-width: calc(100% - (240px * 2));
+  min-width: 880px;
   margin: 0 auto;
   padding: 151px 0 98px; }
 
@@ -1183,6 +1184,7 @@ html {
 @media screen and (max-width: 1023px) {
   .footer {
     max-width: calc(100% - (35px * 2));
+    min-width: auto;
     padding: 62px 0 52px; }
   .footer__text {
     margin-bottom: 20px; }

@@ -2,6 +2,7 @@
 
 .footer {
   max-width: calc(100% - (240px * 2));
+  min-width: 880px;
   margin: 0 auto;
   padding: 151px 0 98px;
 }
@@ -91,6 +92,7 @@
 @media screen and (max-width: $tablet-max) {
   .footer {
     max-width: calc(100% - (35px * 2));
+    min-width: auto;
     padding: 62px 0 52px;
   }
 
