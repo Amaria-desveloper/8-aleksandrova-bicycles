@@ -390,7 +390,9 @@ html {
       background-image: url("../img/lead__image@2x.jpg"); } }
 
 .header__nav {
-  display: block; }
+  display: block;
+  max-width: 880px;
+  margin: 0 auto; }
 
 .header__menu {
   margin: 0 auto; }
@@ -495,7 +497,8 @@ html {
       width: 100%;
       height: 100vh;
       background-color: #ffffff;
-      z-index: 1; }
+      z-index: 1;
+      overflow-y: scroll; }
   .menu__item {
     display: -webkit-box;
     display: -ms-flexbox;
